@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { jqxInputModule }    from 'jqwidgets-ng/jqxinput';
+import { jqxDropDownListModule } from 'jqwidgets-ng/jqxdropdownlist';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,7 +9,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    jqxInputModule,
+    jqxDropDownListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
